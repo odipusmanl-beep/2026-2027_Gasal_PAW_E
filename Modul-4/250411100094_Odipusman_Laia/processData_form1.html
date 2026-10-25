@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Pribadi</title>
+</head>
+<body>
+
+<h3>Register</h3>
+
+<form action="processData2.php" method="GET">
+
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label>Surname:</label><br>
+        <input type="text" name="surname" required><br><br>
+
+        <label>Email address:</label><br>
+        <input type="text" name="email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Street Address:</label><br>
+        <textarea name="address" rows="3" cols="30"></textarea><br><br>
+
+        <label>State:</label><br>
+        <select name="state">
+            <option value="Queensland">Queensland</option>
+            <option value="New South Wales">New South Wales</option>
+            <option value="Victoria">Victoria</option>
+            <option value="Tasmania">Tasmania</option>
+            <option value="Western Australia">Western Australia</option>
+            <option value="South Australia">South Australia</option>
+            <option value="Northern Territory">Northern Territory</option>
+        </select><br><br>
+
+        <input type="hidden" name="country" value="Australia">
+
+        <label>Gender:</label><br>
+        <input type="radio" name="sex" value="male" required> Male
+        <input type="radio" name="sex" value="female"> Female
+        <br><br>
+
+        <label>Vegetarian?</label><br>
+        <input type="checkbox" name="vegetarian" value="Yes">
+        Yes
+        <br><br>
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
